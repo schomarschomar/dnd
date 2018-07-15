@@ -1,4 +1,4 @@
 # dnd
 Dungeon and Dragons
 
-https://schomarschomar.github.io/dnd
+https://schomarschomar.github.io/dnd/index.html
