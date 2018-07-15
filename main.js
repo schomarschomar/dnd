@@ -24,18 +24,18 @@ function getCookie(cname) {
 function checkCookie() {
     var user=getCookie("username");
     if (user != "") {
-        document.getElementById("name").innerHTML = user;
+        document.getElementById("charactername").innerHTML = user;
     } else {
        user = prompt("Please enter your name:","");
        if (user != "" && user != null) {
            setCookie("username", user, 365);
-           document.getElementById("name").innerHTML = user;
+           document.getElementById("charactername").innerHTML = user;
        }
     }
 }
 
 function myFunction() {
-    document.getElementById("name").innerHTML = "Account deleted";
+    document.getElementById("charactername").innerHTML = "Account deleted";
 }
 
 function deleteCookie() {
