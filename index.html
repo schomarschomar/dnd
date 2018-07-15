@@ -2,6 +2,56 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        document.getElementById("charactername.name").innerHTML = user;
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+           setCookie("username", user, 365);
+           document.getElementById("charactername.name").innerHTML = user;
+       }
+    }
+}
+
+function myFunction() {
+    document.getElementById("charactername.name").innerHTML = "Account deleted";
+}
+
+function deleteCookie() {
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+myFunction();
+}
+
+</script>
+
 <style>
 * {
     box-sizing: border-box;
@@ -68,7 +118,6 @@ html {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
 @media only screen and (max-width: 400px) {
     /* For mobile phones: */
     [class*="col-"] {
@@ -77,7 +126,7 @@ html {
 }
 </style>
 </head>
-<body>
+<body onload="checkCookie()">
 
 <div class="header">
   <h1>DnD Character Sheet</h1>
@@ -272,13 +321,13 @@ html {
     <li></li>
     <li></li>
     <li></li>
-    <li></li>
+    <li><a href="#reset">RESET</li>
   </ul>
 </div>
 
 <div id="charactername" class="col-7 aside">
     <h1>CHARACTER NAME</h1>
-    <h4>xxx</h4>
+    <h4 id="charactername.name">xxx</h4>
 </div>
 
 <div id="class+level" class="col-7 aside">
@@ -506,7 +555,12 @@ html {
     <h1>TREASURE</h1>
     <h4>xxx</h4>
 </div>
-    
+
+<div id="reset" class="col-7 aside">
+	<h1>RESET</h1>
+	<button onClick="deleteCookie()">Reset</button>
+</div>
+
 </div>
 
 
