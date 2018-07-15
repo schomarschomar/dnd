@@ -44,7 +44,7 @@ myFunction();
 }
 
 function deleteCookie1(cname) {
-document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+document.cookie = cname + "=;" + "expires=Thu, 01 Jan 1970 00:00:00 UTC;" + expires + ";path=/";
 myFunction();
 }
 
