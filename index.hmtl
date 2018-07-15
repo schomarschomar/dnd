@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #33b5e5;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #33b5e5;
+    margin-top: 15px;
+    padding: 15px;
+    color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 400px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>DnD Character Sheet</h1>
+</div>
+
+<div class="row">
+
+<div class="col-5 menu">
+  <ul>
+    <li><a href="#charactername">CHARACTER NAME</a></li>
+    <li><a href="#classlevel">CLASS &amp; LEVEL</li>
+    <li><a href="#background">BACKGROUND</li>
+    <li><a href="#playername">PLAYER NAME</li>
+    <li><a href="#faction">FACTION</li>
+    <li><a href="#race">RACE</li>
+    <li><a href="#alignment">ALIGNMENT</li>
+    <li><a href="#experiencepoints">EXPERIENCE POINTS</li>
+    <li><a href="#dcinumber">DCI NUMBER</li>
+    <li><a href="#strength">STRENGTH</li>
+    <li><a href="#inspiration">INSPIRATION</li>
+    <li><a href="#proficiencybonus">PROFICIENCY BONUS</li>
+    <li><a href="#armorclass">ARMOR CLASS</li>
+    <li><a href="#initiative">INITIATIVE</li>
+    <li><a href="#speed">SPEED</li>
+    <li><a href="#personality">PERSONALITY TRAITS</li>
+    <li><a href="#dexternity">DEXTERNITY</li>
+    <li><a href="#savingthrows">SAVING THROWS</li>
+    <li><a href="#currenthitpoints">CURRENT HIT POINTS</li>
+    <li><a href="#temporaryhitpoints">TEMPORARY HIT POINTS</li>
+    <li><a href="#ideals">IDEALS</li>
+    <li><a href="#bonds">BONDS</li>
+    <li><a href="#constitution">CONSTITUTION</li>
+    <li><a href="#intelligence">INTELLIGENCE</li>
+    <li><a href="#wisdom">WISDOM</li>
+    <li><a href="#charisma">CHARISMA</li>
+    <li><a href="#skills">SKILLS</li>
+    <li><a href="#hitdice">HIT DICE</li>
+    <li><a href="#deathsaves">DEATH SAVES</li>
+    <li><a href="#flaws">FLAWS</li>
+    <li><a href="#attacksspellcasting">ATTACKS &amp; SPELLCASTING</li>
+    <li><a href="#passivewisdom">PASSIVE WISDOM (PERCEPTION)</li>
+    <li><a href="#otherproficiencieslanguages">OTHER PROFICIENCIES &amp; LANGUAGES</li>
+    <li><a href="#equipment">EQUIPMENT</li>
+    <li><a href="#featurestraits">FEATURES &amp; TRAITS</li>
+    <li><a href="#age">AGE</li>
+    <li><a href="#height">HEIGHT</li>
+    <li><a href="#weight">WEIGHT</li>
+    <li><a href="#eyes">EYES</li>
+    <li><a href="#skin">SKIN</li>
+    <li><a href="#hair">HAIR</li>
+    <li><a href="#characterappearance">CHARACTER APPEARANCE</li>
+    <li><a href="#alliesorganizations">ALLIES &amp; ORGANIZATIONS</li>
+    <li><a href="#characterbackstory">CHARACTER BACKSTORY</li>
+    <li><a href="#additionalfeaturestraits">ADDITIONAL FEATURES &amp; TRAITS</li>
+    <li><a href="#treasure">TREASURE</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+
+<div id="charactername" class="col-7 aside">
+    <h1>CHARACTER NAME</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="class+level" class="col-7 aside">
+    <h1>CLASS &amp; LEVEL</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="background" class="col-7 aside">
+    <h1>Background</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="playername" class="col-7 aside">
+    <h1>Player Name</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="faction" class="col-7 aside">
+    <h1>Faction</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="race" class="col-7 aside">
+    <h1>Race</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="alignment" class="col-7 aside">
+    <h1>Alignment</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="experiencepoints" class="col-7 aside">
+    <h1>EPERIENCE POINTS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="dcinumber" class="col-7 aside">
+    <h1>DCI NUMBER</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="strength" class="col-7 aside">
+    <h1>STRENGTH</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="inspiration" class="col-7 aside">
+    <h1>INSPIRATION</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="proficiencybonus" class="col-7 aside">
+    <h1>PROFICIENCY BONUS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="armorclass" class="col-7 aside">
+    <h1>ARMOR CLASS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="initiative" class="col-7 aside">
+    <h1>INITIATIVE</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="speed" class="col-7 aside">
+    <h1>SPEED</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="personality" class="col-7 aside">
+    <h1>PERSONALITY</h1>
+    <h4>xxx</h4>
+</div>
+
+
+<div id="dexternity" class="col-7 aside">
+    <h1>DEXTERNITY</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="savingthrows" class="col-7 aside">
+    <h1>SAVING THROWS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="currenthitpoints" class="col-7 aside">
+    <h1>CURRENT HIT POINTS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="temporaryhitpoints" class="col-7 aside">
+    <h1>TEMPORARY HIT POINTS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="ideals" class="col-7 aside">
+    <h1>IDEALS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="bonds" class="col-7 aside">
+    <h1>BONDS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="constitution" class="col-7 aside">
+    <h1>CONSTITUTION</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="intelligence" class="col-7 aside">
+    <h1>INTELLIGENCE</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="wisdom" class="col-7 aside">
+    <h1>WISDOM</h1>
+    <h4>xxx</h4>
+</div>
+   
+<div id="charisma" class="col-7 aside">
+    <h1>CHARISMA</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="skills" class="col-7 aside">
+    <h1>SKILLS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="hitdice" class="col-7 aside">
+    <h1>HIT DICE</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="deathsaves" class="col-7 aside">
+    <h1>DEATH SAVES</h1>
+    <h4>xxx</h4>
+</div>
+    
+<div id="flaws" class="col-7 aside">
+    <h1>FLAWS</h1>
+    <h4>xxx</h4>
+</div>    
+    
+<div id="attacksspellcasting" class="col-7 aside">
+    <h1>ATTACKS &amp; SPELLCASTING</h1>
+    <h4>xxx</h4>
+</div> 
+
+<div id="passivewisdom" class="col-7 aside">
+    <h1>PASSIVE WISDOM (PERCEPTION)</h1>
+    <h4>xxx</h4>
+</div> 
+
+<div id="otherproficiencieslanguages" class="col-7 aside">
+    <h1>OTHER PROFICIENCIES &amp; LANGUAGES</h1>
+    <h4>xxx</h4>
+</div> 
+    
+<div id="equipment" class="col-7 aside">
+    <h1>EQUIPMENT</h1>
+    <h4>xxx</h4>
+</div> 
+
+<div id="featurestraits" class="col-7 aside">
+    <h1>FEATURES &amp; TRAITS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="age" class="col-7 aside">
+    <h1>AGE</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="height" class="col-7 aside">
+    <h1>HEIGHT</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="weight" class="col-7 aside">
+    <h1>WEIGHT</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="eyes" class="col-7 aside">
+    <h1>EYES</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="skin" class="col-7 aside">
+    <h1>SKIN</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="hair" class="col-7 aside">
+    <h1>HAIR</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="characterappearance" class="col-7 aside">
+    <h1>CHARACTER APPEARANCE</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="alliesorganizations" class="col-7 aside">
+    <h1>ALLIES &amp; ORGANIZATIONS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="characterbackstory" class="col-7 aside">
+    <h1>CHARACTER BACKSTORY</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="additionalfeaturestraits" class="col-7 aside">
+    <h1>ADDITIONAL FEATURES &amp; TRAITS</h1>
+    <h4>xxx</h4>
+</div>
+
+<div id="treasure" class="col-7 aside">
+    <h1>TREASURE</h1>
+    <h4>xxx</h4>
+</div>
+    
+</div>
+
+
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
