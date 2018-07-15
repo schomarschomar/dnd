@@ -4,14 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
-
 function setCookie(cname,cvalue,exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires=" + d.toGMTString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -27,7 +25,6 @@ function getCookie(cname) {
     }
     return "";
 }
-
 function checkCookie() {
     var user=getCookie("username");
     if (user != "") {
@@ -40,16 +37,13 @@ function checkCookie() {
        }
     }
 }
-
 function myFunction() {
     document.getElementById("charactername.name").innerHTML = "Account deleted";
 }
-
 function deleteCookie() {
 document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 myFunction();
 }
-
 </script>
 
 <style>
@@ -182,145 +176,130 @@ html {
     <li><a href="#characterbackstory">CHARACTER BACKSTORY</li>
     <li><a href="#additionalfeaturestraits">ADDITIONAL FEATURES &amp; TRAITS</li>
     <li><a href="#treasure">TREASURE</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
     <li><a href="#reset">RESET</li>
   </ul>
 </div>
