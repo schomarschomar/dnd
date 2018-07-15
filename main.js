@@ -38,8 +38,8 @@ function myFunction() {
     document.getElementById("charactername.name").innerHTML = "Account deleted";
 }
 
-function deleteCookie() {
-document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+function deleteCookie(dname) {
+document.cookie = dname + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 myFunction();
 }
 
