@@ -34,6 +34,16 @@ function checkCookie() {
     }
 }
 
+function editCookie() {
+    var user=getCookie("username");
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+           setCookie("username", user, 365);
+           document.getElementById("charactername.name").innerHTML = user;
+       }
+    }
+}
+
 function myFunction() {
     document.getElementById("charactername.name").innerHTML = "Account deleted";
 }
